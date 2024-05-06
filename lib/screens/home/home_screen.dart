@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:productivity_app/widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +13,8 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Container(
         child: Text("HomeScreen"),
-      )
+      ),
+      bottomNavigationBar: CustomBottomNavigationBar(),
     );
   }
 }
