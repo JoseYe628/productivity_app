@@ -9,9 +9,9 @@ class CustomBottomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context){
     return Container(
       //height: 60,
-      padding: EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.symmetric(vertical: 5),
       color: Colors.blueAccent,
-      child: Column(
+      child: const Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Row(
