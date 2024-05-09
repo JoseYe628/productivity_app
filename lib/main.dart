@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:productivity_app/blocs/blocs.dart';
 import 'package:productivity_app/routes/app_routes.dart';
 
 void main(){
@@ -7,6 +9,22 @@ void main(){
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<HomeRouteCubit>(create: (context) => HomeRouteCubit()),
+      ],
+      child: const ContentApp()
+    );
+  }
+}
+
+class ContentApp extends StatelessWidget {
+  const ContentApp({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

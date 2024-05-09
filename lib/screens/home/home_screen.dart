@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:productivity_app/blocs/blocs.dart';
 import 'package:productivity_app/widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -6,6 +8,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context){
+
+    final homeRouteCubit = BlocProvider.of<HomeRouteCubit>(context);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("ProductivityApp"),
@@ -14,7 +19,25 @@ class HomeScreen extends StatelessWidget {
       body: Container(
         child: Text("HomeScreen"),
       ),
-      bottomNavigationBar: CustomBottomNavigationBar(),
+      bottomNavigationBar: CustomBottomNavigationBar(
+        items: [
+          CustomBottomNavigationItem(
+            callback: (){
+              homeRouteCubit.setIndex(0);
+            },
+          ),
+          CustomBottomNavigationItem(
+            callback: (){
+              homeRouteCubit.setIndex(1);
+            },
+          ),
+          CustomBottomNavigationItem(
+            callback: (){
+              homeRouteCubit.setIndex(2);
+            },
+          ),
+        ],
+      ),
     );
   }
 }
