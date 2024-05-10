@@ -9,7 +9,13 @@ class CustomBottomNavigationItem extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return InkWell(
-      child: Icon(Icons.games),
+      child: Container(
+        margin: EdgeInsets.symmetric(vertical: 5),
+        child: Icon(
+          Icons.games, 
+          size: 30,
+        ),
+      ),
       onTap: callback,
     );
   }

@@ -12,7 +12,6 @@ class SnackNavigation extends StatelessWidget {
   Widget build(BuildContext context){
     return Container(
       height: 10,
-      color: Colors.red,
       width: MediaQuery.of(context).size.width,
       child: CustomPaint(
         painter: SnackPainter(pointA: pointA ,pointB: pointB),
