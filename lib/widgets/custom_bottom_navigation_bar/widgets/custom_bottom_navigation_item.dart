@@ -8,11 +8,9 @@ class CustomBottomNavigationItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context){
-    return Container(
-      child: IconButton(
-        icon: Icon(Icons.pix, size: 25,), 
-        onPressed: callback,
-      ),
+    return InkWell(
+      child: Icon(Icons.games),
+      onTap: callback,
     );
   }
 }

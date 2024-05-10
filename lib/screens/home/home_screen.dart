@@ -10,6 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context){
 
     final homeRouteCubit = BlocProvider.of<HomeRouteCubit>(context);
+    final widthDevice = MediaQuery.of(context).size.width;
 
     return Scaffold(
       appBar: AppBar(
@@ -20,6 +21,7 @@ class HomeScreen extends StatelessWidget {
         child: Text("HomeScreen"),
       ),
       bottomNavigationBar: CustomBottomNavigationBar(
+        initialWidthDevice: widthDevice,
         items: [
           CustomBottomNavigationItem(
             callback: (){

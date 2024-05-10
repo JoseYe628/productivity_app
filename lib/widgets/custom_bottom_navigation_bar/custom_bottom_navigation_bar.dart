@@ -5,9 +5,10 @@ import 'package:productivity_app/blocs/blocs.dart';
 import 'package:productivity_app/widgets/custom_bottom_navigation_bar/widgets/widgets.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
-  CustomBottomNavigationBar({super.key, required this.items});
+  CustomBottomNavigationBar({super.key, required this.items, required this.initialWidthDevice});
 
   List<CustomBottomNavigationItem> items;
+  double initialWidthDevice;
 
   @override
   State<CustomBottomNavigationBar> createState() => _CustomBottomNavigationBarState();
@@ -15,8 +16,24 @@ class CustomBottomNavigationBar extends StatefulWidget {
 
 class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> with TickerProviderStateMixin {
 
+  late AnimationController controller;
+  late Animation<double> animationPointA;
+  late Animation<double> animationPointB;
+
+  late double currentPointA;
+  late double currentPointB;
+
   @override
   void initState() {
+    int lenItems = widget.items.length;
+    double deviceWidth = widget.initialWidthDevice;
+    double itemWidth = 25;
+    double remainder = (deviceWidth - (lenItems*itemWidth))/(lenItems + 1);
+    setState(() {
+      currentPointA = remainder;
+      currentPointB = remainder + itemWidth;
+    });
+    controller = AnimationController(duration: Duration(milliseconds: 1000), vsync: this);
     super.initState();
   }
 
@@ -47,7 +64,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> w
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: widget.items,
             ),
-            SnackNavigation(point: 140)
+            SnackNavigation(pointA: currentPointA, pointB: currentPointB,)
           ],
         ),
       ),
