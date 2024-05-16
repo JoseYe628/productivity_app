@@ -92,8 +92,6 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> w
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text("a: $currentPointA"),
-            Text("b: $currentPointB"),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: widget.items,

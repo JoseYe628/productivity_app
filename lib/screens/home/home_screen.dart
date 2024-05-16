@@ -8,9 +8,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context){
-
-    final homeRouteCubit = BlocProvider.of<HomeRouteCubit>(context);
-
     return Scaffold(
       appBar: AppBar(
         title: const Text("ProductivityApp"),
@@ -19,25 +16,39 @@ class HomeScreen extends StatelessWidget {
       body: Container(
         child: Text("HomeScreen"),
       ),
-      bottomNavigationBar: CustomBottomNavigationBar(
-        items: [
-          CustomBottomNavigationItem(
-            callback: (){
-              homeRouteCubit.setIndex(0);
-            },
-          ),
-          CustomBottomNavigationItem(
-            callback: (){
-              homeRouteCubit.setIndex(1);
-            },
-          ),
-          CustomBottomNavigationItem(
-            callback: (){
-              homeRouteCubit.setIndex(2);
-            },
-          ),
-        ],
-      ),
+      bottomNavigationBar: const _BottomNav(),
+    );
+  }
+}
+
+class _BottomNav extends StatelessWidget {
+  const _BottomNav({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+
+    final homeRouteCubit = BlocProvider.of<HomeRouteCubit>(context);
+
+    return CustomBottomNavigationBar(
+      items: [
+        CustomBottomNavigationItem(
+          callback: (){
+            homeRouteCubit.setIndex(0);
+          },
+        ),
+        CustomBottomNavigationItem(
+          callback: (){
+            homeRouteCubit.setIndex(1);
+          },
+        ),
+        CustomBottomNavigationItem(
+          callback: (){
+            homeRouteCubit.setIndex(2);
+          },
+        ),
+      ],
     );
   }
 }
