@@ -1,22 +1,81 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:productivity_app/blocs/blocs.dart';
 
-class CustomBottomNavigationItem extends StatelessWidget {
-  const CustomBottomNavigationItem({super.key, required this.callback});
+class CustomBottomNavigationItem extends StatefulWidget {
+  const CustomBottomNavigationItem({super.key, required this.callback, required this.icon, required this.index});
 
   final VoidCallback callback;
+  final IconData icon;
+  final int index;
+
+  @override
+  State<CustomBottomNavigationItem> createState() => _CustomBottomNavigationItemState();
+}
+
+class _CustomBottomNavigationItemState extends State<CustomBottomNavigationItem> with TickerProviderStateMixin {
+
+  late AnimationController controller;
+  late Animation<Color?> animationColor;
+  late Animation<double> animationSize;
+
+  late double iconSize;
+  late Color? iconColor;
+
+  @override
+  void initState() {
+    iconSize = widget.index == 0 ? 35.0 : 28.0;
+    iconColor = widget.index == 0 ? Colors.yellowAccent : Colors.grey;
+    controller = AnimationController(vsync:this, duration: const Duration(milliseconds: 300));
+    animationColor = ColorTween(begin: Colors.grey, end: Colors.yellow).animate(controller);
+    animationSize = Tween(begin: 28.0, end: 35.0).animate(controller);
+    setState(() {});
+    controller.addListener((){
+      if(widget.index == 0){ print(controller.value); }
+      setState((){
+        iconColor = animationColor.value;
+        iconSize = animationSize.value;
+      });
+    });
+    super.initState();
+  }
+
+  void iconToggle(int currentRouteIndex){
+    if(widget.index == currentRouteIndex){
+      controller.forward();
+    } else {
+      if(iconColor == Colors.yellowAccent){
+        controller.reverse(from: 1.0);
+      } else {
+        controller.reverse();
+      }
+    }
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    controller.dispose();
+  }
 
   @override
   Widget build(BuildContext context){
     return InkWell(
+      onTap: widget.callback,
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 5),
-        child: Icon(
-          Icons.games, 
-          size: 30,
+        margin: const EdgeInsets.symmetric(vertical: 5),
+        child: BlocListener<HomeRouteCubit, int>(
+          listener: (context, routeIndex){
+            iconToggle(routeIndex);
+          },
+          child: Icon(
+            widget.icon,
+            size: iconSize,
+            color: iconColor,
+          ),
         ),
       ),
-      onTap: callback,
     );
   }
 }

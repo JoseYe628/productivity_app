@@ -30,17 +30,15 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> w
   @override
   void initState() {
     int lenItems = widget.items.length;
-
-    print(deviceWidth);
     double itemWidth = 30;
     double remainder = (deviceWidth - (lenItems*itemWidth))/(lenItems + 1);
     setState(() {
       currentPointA = remainder;
       currentPointB = remainder + itemWidth;
     });
-    controller = AnimationController(duration: Duration(milliseconds: 500), vsync: this);
-    animationPointA = Tween(begin: currentPointA+20, end: currentPointB+10).animate(controller);
-    animationPointB = Tween(begin: currentPointA+20, end: currentPointB+10).animate(controller);
+    controller = AnimationController(duration: Duration(milliseconds: 400), vsync: this);
+    animationPointA = Tween(begin: currentPointA, end: currentPointB).animate(CurvedAnimation(parent: controller, curve: Curves.linear));
+    animationPointB = Tween(begin: currentPointA, end: currentPointB).animate(CurvedAnimation(parent: controller, curve: Curves.fastOutSlowIn));
     controller.addListener((){
       setState(() {
         currentPointA = animationPointA.value;
@@ -82,8 +80,8 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> w
 
 
     return Container(
-      //height: 60,
-      padding: const EdgeInsets.symmetric(vertical: 5),
+      height: 65,
+      padding: const EdgeInsets.only(top: 5, bottom: 4),
       color: Colors.blueGrey,
       child: BlocListener<HomeRouteCubit, int>(
         listener: (context, routeIndex) {
@@ -92,9 +90,13 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> w
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: widget.items,
+            Container(
+              height: 45,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: widget.items,
+              ),
             ),
             SnackNavigation(pointA: currentPointA, pointB: currentPointB,)
           ],

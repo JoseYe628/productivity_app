@@ -53,16 +53,22 @@ class _BottomNav extends StatelessWidget {
     return CustomBottomNavigationBar(
       items: [
         CustomBottomNavigationItem(
+          icon: Icons.task,
+          index: 0,
           callback: (){
             homeRouteCubit.setIndex(0);
           },
         ),
         CustomBottomNavigationItem(
+          icon: Icons.list,
+          index: 1,
           callback: (){
             homeRouteCubit.setIndex(1);
           },
         ),
         CustomBottomNavigationItem(
+          icon: Icons.schedule,
+          index: 2,
           callback: (){
             homeRouteCubit.setIndex(2);
           },
