@@ -10,9 +10,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Colors.red,
       appBar: AppBar(
-        title: const Text("ProductivityApp"),
+        title: const Text("RunApp"),
         centerTitle: true,
       ),
       body: BlocBuilder<HomeRouteCubit, int>(

@@ -22,6 +22,16 @@ abstract class AppTheme {
 
   ThemeData theme() => ThemeData.light().copyWith(
     scaffoldBackgroundColor: backgroundColor,
+    appBarTheme: AppBarTheme(
+      elevation: 0.0,
+      backgroundColor: primaryColor,
+      titleTextStyle: TextStyle(color: textColor, fontSize: 15),
+    ),
+    textTheme: TextTheme(
+      bodySmall: TextStyle(color: textColor),
+      bodyMedium: TextStyle(color: textColor),
+      bodyLarge: TextStyle(color: textColor),
+    ),
   );
 
 
