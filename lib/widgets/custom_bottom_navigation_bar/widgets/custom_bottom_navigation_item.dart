@@ -32,7 +32,6 @@ class _CustomBottomNavigationItemState extends State<CustomBottomNavigationItem>
     animationSize = Tween(begin: 28.0, end: 35.0).animate(controller);
     setState(() {});
     controller.addListener((){
-      if(widget.index == 0){ print(controller.value); }
       setState((){
         iconColor = animationColor.value;
         iconSize = animationSize.value;
