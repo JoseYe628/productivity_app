@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:productivity_app/blocs/blocs.dart';
 import 'package:productivity_app/routes/app_routes.dart';
+import 'package:productivity_app/theme/themes/dracula_theme.dart';
 
 void main(){
   runApp(const MyApp());
@@ -30,9 +31,9 @@ class ContentApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Productivity App",
+      theme: DraculaLightTheme().theme(),
       routes: AppRoutes.generateRoutes(),
       initialRoute: AppRoutes.initialRoute,
-      home: Container(),
     );
   }
 }

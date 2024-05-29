@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="designs.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0645786"
+     inkscape:cx="343.32833"
+     inkscape:cy="380.90188"
+     inkscape:window-width="1884"
+     inkscape:window-height="1036"
+     inkscape:window-x="18"
+     inkscape:window-y="8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#383163;fill-opacity:0.98898;fill-rule:evenodd;stroke:none;stroke-width:0.665001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       id="rect1"
+       width="85.073677"
+       height="155.44159"
+       x="106.59348"
+       y="24.121752"
+       ry="6.5394473"
+       inkscape:export-filename="design_app.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:0.98898;fill-rule:evenodd;stroke:#98c0ad;stroke-width:3.438;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path1"
+       sodipodi:type="arc"
+       sodipodi:cx="96.084686"
+       sodipodi:cy="129.55415"
+       sodipodi:rx="13.533384"
+       sodipodi:ry="13.533384"
+       sodipodi:start="0"
+       sodipodi:end="5.2172522"
+       sodipodi:arc-type="arc"
+       d="m 109.61807,129.55415 a 13.533384,13.533384 0 0 1 -9.969496,13.0557 13.533384,13.533384 0 0 1 -15.22024,-6.17951 13.533384,13.533384 0 0 1 1.953286,-16.31033 13.533384,13.533384 0 0 1 16.249,-2.41082"
+       transform="rotate(-31.042855)"
+       sodipodi:open="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.01148px;line-height:normal;font-family:Monospace;-inkscape-font-specification:Monospace;text-decoration-color:#000000;fill:#98c0ad;fill-opacity:1;stroke-width:0.881836;-inkscape-stroke:none;stop-color:#000000"
+       x="143.73232"
+       y="64.063034"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Cascadia Mono PL';-inkscape-font-specification:'Cascadia Mono PL';fill:#98c0ad;fill-opacity:1;stroke-width:0.881838"
+         x="143.73232"
+         y="64.063034">75%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.27266px;line-height:normal;font-family:Monospace;-inkscape-font-specification:Monospace;text-decoration-color:#000000;fill:#98c0ad;fill-opacity:1;stroke-width:0.480073;-inkscape-stroke:none;stop-color:#000000"
+       x="143.22971"
+       y="31.736156"
+       id="text1-7"><tspan
+         sodipodi:role="line"
+         id="tspan1-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono Bold';fill:#98c0ad;fill-opacity:1;stroke-width:0.480074"
+         x="143.22971"
+         y="31.736156">RunApp</tspan></text>
+    <g
+       id="g4"
+       transform="translate(5.5943311,-18.500887)">
+      <path
+         style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#98c0ad;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         d="m 177.45062,48.325243 h 3.09019"
+         id="path2" />
+      <path
+         style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#98c0ad;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         d="m 177.45062,49.337065 h 3.09019"
+         id="path3" />
+      <path
+         style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#98c0ad;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         d="m 177.45062,50.348887 h 3.09019"
+         id="path4" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:2.60316px;line-height:normal;font-family:Monospace;-inkscape-font-specification:Monospace;text-decoration-color:#000000;fill:#98c0ad;fill-opacity:1;stroke-width:0.381863;-inkscape-stroke:none;stop-color:#000000"
+       x="142.04872"
+       y="83.509583"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono Bold';fill:#98c0ad;fill-opacity:1;stroke-width:0.381863"
+         x="142.04872"
+         y="83.509583">Jue, 28 Sep</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#98c0ad;stroke-width:0.342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.998758;stop-color:#000000;stop-opacity:1"
+       d="m 118.20473,98.411066 63.24588,-0.55045"
+       id="path5" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.45505px;line-height:normal;font-family:Monospace;-inkscape-font-specification:Monospace;text-decoration-color:#000000;fill:#98c0ad;fill-opacity:1;stroke-width:0.506827;-inkscape-stroke:none;stop-color:#000000"
+       x="118.29085"
+       y="96.892578"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono Bold';fill:#98c0ad;fill-opacity:1;stroke-width:0.506827"
+         x="118.29085"
+         y="96.892578">Tareas</tspan></text>
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#1f1c4e;fill-opacity:0.992157;fill-rule:evenodd;stroke:none;stroke-width:0.623;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect5"
+       width="65.118431"
+       height="7.8932047"
+       x="117.87223"
+       y="105.29883"
+       ry="2.247227" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.35102px;line-height:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono';text-decoration-color:#000000;fill:#98c0ad;fill-opacity:1;stroke-width:0.344876;-inkscape-stroke:none;stop-color:#000000"
+       x="120.91561"
+       y="109.85615"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="fill:#98c0ad;fill-opacity:1;stroke-width:0.344878"
+         x="120.91561"
+         y="109.85615">Limpiar la casa</tspan></text>
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#1f1c4e;fill-opacity:0.992157;fill-rule:evenodd;stroke:none;stroke-width:0.623;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect6"
+       width="65.118431"
+       height="7.8932047"
+       x="117.87223"
+       y="115.20732"
+       ry="2.247227" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.35102px;line-height:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono';text-decoration-color:#000000;fill:#98c0ad;fill-opacity:1;stroke-width:0.344876;-inkscape-stroke:none;stop-color:#000000"
+       x="120.91561"
+       y="119.76464"
+       id="text7"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         style="fill:#98c0ad;fill-opacity:1;stroke-width:0.344878"
+         x="120.91561"
+         y="119.76464">Hacer ejercicios</tspan></text>
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#98c0ad;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.623;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect7"
+       width="65.118431"
+       height="7.8932047"
+       x="117.87223"
+       y="124.83304"
+       ry="2.247227" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.35102px;line-height:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono';text-decoration-color:#000000;fill:#373063;fill-opacity:0.992157;stroke-width:0.344876;-inkscape-stroke:none;stop-color:#000000"
+       x="120.91561"
+       y="129.39035"
+       id="text8"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="fill:#373063;fill-opacity:0.992157;stroke-width:0.344878"
+         x="120.91561"
+         y="129.39035">Estudiar programación</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#373063;stroke-width:0.641386;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.992157;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       d="m 177.18958,129.14226 0.44472,0.77028 1.53755,-2.26493"
+       id="path8" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#1f1c4e;fill-opacity:0.992157;fill-rule:evenodd;stroke:none;stroke-width:0.623;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect8"
+       width="65.118431"
+       height="7.8932047"
+       x="117.87223"
+       y="135.16541"
+       ry="2.247227" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.35102px;line-height:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono';text-decoration-color:#000000;fill:#98c0ad;fill-opacity:1;stroke-width:0.344876;-inkscape-stroke:none;stop-color:#000000"
+       x="120.91561"
+       y="139.72273"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="fill:#98c0ad;fill-opacity:1;stroke-width:0.344878"
+         x="120.91561"
+         y="139.72273">Ir a entrenar en el gimnasio</tspan></text>
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#383163;fill-opacity:0.98898;fill-rule:evenodd;stroke:none;stroke-width:0.665001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       id="rect10"
+       width="85.073677"
+       height="155.44159"
+       x="11.604424"
+       y="22.972652"
+       ry="6.5394473" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:0.98898;fill-rule:evenodd;stroke:#eeee00;stroke-width:3.438;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path10"
+       sodipodi:type="arc"
+       sodipodi:cx="15.292366"
+       sodipodi:cy="79.585754"
+       sodipodi:rx="13.533384"
+       sodipodi:ry="13.533384"
+       sodipodi:start="0"
+       sodipodi:end="5.2172522"
+       sodipodi:arc-type="arc"
+       d="M 28.82575,79.585754 A 13.533384,13.533384 0 0 1 18.856254,92.64145 13.533384,13.533384 0 0 1 3.6360136,86.461941 13.533384,13.533384 0 0 1 5.5892993,70.151615 13.533384,13.533384 0 0 1 21.838298,67.740786"
+       transform="rotate(-31.042855)"
+       sodipodi:open="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.01148px;line-height:normal;font-family:Monospace;-inkscape-font-specification:Monospace;text-decoration-color:#000000;fill:#eeee00;fill-opacity:1;stroke-width:0.881836;-inkscape-stroke:none;stop-color:#000000"
+       x="48.743259"
+       y="62.913933"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Cascadia Mono PL';-inkscape-font-specification:'Cascadia Mono PL';fill:#eeee00;fill-opacity:1;stroke-width:0.881838"
+         x="48.743259"
+         y="62.913933">75%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.27266px;line-height:normal;font-family:Monospace;-inkscape-font-specification:Monospace;text-decoration-color:#000000;fill:#eeee00;fill-opacity:1;stroke-width:0.480073;-inkscape-stroke:none;stop-color:#000000"
+       x="48.240658"
+       y="30.587057"
+       id="text11"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono Bold';fill:#eeee00;fill-opacity:1;stroke-width:0.480074"
+         x="48.240658"
+         y="30.587057">RunApp</tspan></text>
+    <path
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;stroke:#eeee00;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       d="m 88.055903,28.675254 h 3.09019"
+       id="path11" />
+    <path
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;stroke:#eeee00;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       d="m 88.055903,29.687076 h 3.09019"
+       id="path12" />
+    <path
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;stroke:#eeee00;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       d="m 88.055903,30.698898 h 3.09019"
+       id="path13" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.60316px;line-height:normal;font-family:Monospace;-inkscape-font-specification:Monospace;text-decoration-color:#000000;fill:#eeee00;fill-opacity:1;stroke-width:0.381863;-inkscape-stroke:none;stop-color:#000000"
+       x="47.059673"
+       y="82.360474"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono Bold';fill:#eeee00;fill-opacity:1;stroke-width:0.381863"
+         x="47.059673"
+         y="82.360474">Jue, 28 Sep</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#eeee00;stroke-width:0.342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 23.215687,97.261964 63.245886,-0.55045"
+       id="path14" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.45505px;line-height:normal;font-family:Monospace;-inkscape-font-specification:Monospace;text-decoration-color:#000000;fill:#eeee00;fill-opacity:1;stroke-width:0.506827;-inkscape-stroke:none;stop-color:#000000"
+       x="23.301804"
+       y="95.743469"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono Bold';fill:#eeee00;fill-opacity:1;stroke-width:0.506827"
+         x="23.301804"
+         y="95.743469">Tareas</tspan></text>
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#1f1c4e;fill-opacity:0.992157;fill-rule:evenodd;stroke:none;stroke-width:0.623;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect14"
+       width="65.118431"
+       height="7.8932047"
+       x="22.883194"
+       y="104.14972"
+       ry="2.247227" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.35102px;line-height:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono';text-decoration-color:#000000;fill:#98c0ad;fill-opacity:1;stroke-width:0.344876;-inkscape-stroke:none;stop-color:#000000"
+       x="25.926575"
+       y="108.70705"
+       id="text15"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         style="fill:#98c0ad;fill-opacity:1;stroke-width:0.344878"
+         x="25.926575"
+         y="108.70705">Limpiar la casa</tspan></text>
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#1f1c4e;fill-opacity:0.992157;fill-rule:evenodd;stroke:none;stroke-width:0.623;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect15"
+       width="65.118431"
+       height="7.8932047"
+       x="22.883194"
+       y="114.05822"
+       ry="2.247227" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.35102px;line-height:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono';text-decoration-color:#000000;fill:#98c0ad;fill-opacity:1;stroke-width:0.344876;-inkscape-stroke:none;stop-color:#000000"
+       x="25.926575"
+       y="118.61552"
+       id="text16"><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         style="fill:#98c0ad;fill-opacity:1;stroke-width:0.344878"
+         x="25.926575"
+         y="118.61552">Hacer ejercicios</tspan></text>
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#eeee00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.623;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect16"
+       width="65.118431"
+       height="7.8932047"
+       x="22.883194"
+       y="123.68393"
+       ry="2.247227" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.35102px;line-height:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono';text-decoration-color:#000000;fill:#373063;fill-opacity:0.992157;stroke-width:0.344876;-inkscape-stroke:none;stop-color:#000000"
+       x="25.926575"
+       y="128.24123"
+       id="text17"><tspan
+         sodipodi:role="line"
+         id="tspan17"
+         style="fill:#373063;fill-opacity:0.992157;stroke-width:0.344878"
+         x="25.926575"
+         y="128.24123">Estudiar programación</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#373063;stroke-width:0.641386;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.992157;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       d="m 82.200543,127.99316 0.44472,0.77028 1.53755,-2.26493"
+       id="path17" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#1f1c4e;fill-opacity:0.992157;fill-rule:evenodd;stroke:none;stroke-width:0.623;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect17"
+       width="65.118431"
+       height="7.8932047"
+       x="22.883194"
+       y="134.0163"
+       ry="2.247227" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.35102px;line-height:normal;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono';text-decoration-color:#000000;fill:#98c0ad;fill-opacity:1;stroke-width:0.344876;-inkscape-stroke:none;stop-color:#000000"
+       x="25.926575"
+       y="138.57362"
+       id="text18"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         style="fill:#98c0ad;fill-opacity:1;stroke-width:0.344878"
+         x="25.926575"
+         y="138.57362">Ir a entrenar en el gimnasio</tspan></text>
+  </g>
+</svg>
