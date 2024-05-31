@@ -6,18 +6,22 @@ class TaskScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context){
+
+
     return Container(
       height: double.infinity,
-      width: double.infinity,
       padding: EdgeInsets.symmetric(horizontal: 5),
-      child: Column(
-        children: [
-          SizedBox(height: 35,),
-          TasksProgress(),
-          SizedBox(height: 20,),
-          _DateWidget(),
-          // TODO: TasksWidget
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 35,),
+            TasksProgress(),
+            SizedBox(height: 20,),
+            _DateWidget(),
+            SizedBox(height: 20,),
+            TasksList(),
+          ],
+        ),
       ),
     );
   }
