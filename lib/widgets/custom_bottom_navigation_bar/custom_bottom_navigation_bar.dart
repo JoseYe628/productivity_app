@@ -5,9 +5,10 @@ import 'package:productivity_app/blocs/blocs.dart';
 import 'package:productivity_app/widgets/custom_bottom_navigation_bar/widgets/widgets.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
-  CustomBottomNavigationBar({super.key, required this.items});
+  CustomBottomNavigationBar({super.key, required this.items, this.backgroundColor = Colors.pink, this.snackColor = Colors.orangeAccent});
 
   List<CustomBottomNavigationItem> items;
+  Color backgroundColor, snackColor;
 
   @override
   State<CustomBottomNavigationBar> createState() => _CustomBottomNavigationBarState();
@@ -77,12 +78,10 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> w
 
   @override
   Widget build(BuildContext context){
-
-
     return Container(
       height: 65,
       padding: const EdgeInsets.only(top: 5, bottom: 4),
-      color: Colors.blueGrey,
+      color: widget.backgroundColor,
       child: BlocListener<HomeRouteCubit, int>(
         listener: (context, routeIndex) {
           moveSnack(routeIndex);
@@ -98,7 +97,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> w
                 children: widget.items,
               ),
             ),
-            SnackNavigation(pointA: currentPointA, pointB: currentPointB,)
+            SnackNavigation(pointA: currentPointA, pointB: currentPointB, color: widget.snackColor)
           ],
 
         ),

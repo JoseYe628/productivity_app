@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:productivity_app/blocs/blocs.dart';
 import 'package:productivity_app/screens/home/screens/screens.dart';
+import 'package:productivity_app/theme/app_theme.dart';
 import 'package:productivity_app/widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -49,30 +50,40 @@ class _BottomNav extends StatelessWidget {
 
     final homeRouteCubit = BlocProvider.of<HomeRouteCubit>(context);
 
-    return CustomBottomNavigationBar(
-      items: [
-        CustomBottomNavigationItem(
-          icon: Icons.task,
-          index: 0,
-          callback: (){
-            homeRouteCubit.setIndex(0);
-          },
-        ),
-        CustomBottomNavigationItem(
-          icon: Icons.list,
-          index: 1,
-          callback: (){
-            homeRouteCubit.setIndex(1);
-          },
-        ),
-        CustomBottomNavigationItem(
-          icon: Icons.schedule,
-          index: 2,
-          callback: (){
-            homeRouteCubit.setIndex(2);
-          },
-        ),
-      ],
+    return BlocBuilder<ThemeCubit, AppTheme>(
+      builder: (context, theme) => CustomBottomNavigationBar(
+        backgroundColor: theme.backgroundColor,
+        snackColor: theme.primaryColor,
+        items: [
+          CustomBottomNavigationItem(
+            icon: Icons.task,
+            index: 0,
+            activeColor: theme.primaryColor,
+            inactiveColor: Colors.grey,
+            callback: (){
+              homeRouteCubit.setIndex(0);
+            },
+          ),
+          CustomBottomNavigationItem(
+            icon: Icons.list,
+            index: 1,
+            activeColor: theme.primaryColor,
+            inactiveColor: Colors.grey,
+            callback: (){
+              homeRouteCubit.setIndex(1);
+            },
+          ),
+          CustomBottomNavigationItem(
+            icon: Icons.schedule,
+            index: 2,
+            activeColor: theme.primaryColor,
+            inactiveColor: Colors.grey,
+            callback: (){
+              homeRouteCubit.setIndex(2);
+            },
+          ),
+        ],
+      ),
     );
   }
 }

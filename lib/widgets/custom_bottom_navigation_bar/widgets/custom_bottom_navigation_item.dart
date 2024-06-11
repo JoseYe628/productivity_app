@@ -4,11 +4,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:productivity_app/blocs/blocs.dart';
 
 class CustomBottomNavigationItem extends StatefulWidget {
-  const CustomBottomNavigationItem({super.key, required this.callback, required this.icon, required this.index});
+  const CustomBottomNavigationItem({super.key, required this.callback, required this.icon, required this.index, required this.activeColor, required this.inactiveColor});
 
   final VoidCallback callback;
   final IconData icon;
   final int index;
+  final Color activeColor, inactiveColor;
 
   @override
   State<CustomBottomNavigationItem> createState() => _CustomBottomNavigationItemState();
@@ -26,9 +27,9 @@ class _CustomBottomNavigationItemState extends State<CustomBottomNavigationItem>
   @override
   void initState() {
     iconSize = widget.index == 0 ? 35.0 : 28.0;
-    iconColor = widget.index == 0 ? Colors.yellowAccent : Colors.grey;
+    iconColor = widget.index == 0 ? widget.activeColor : widget.inactiveColor;
     controller = AnimationController(vsync:this, duration: const Duration(milliseconds: 300));
-    animationColor = ColorTween(begin: Colors.grey, end: Colors.yellow).animate(controller);
+    animationColor = ColorTween(begin: widget.inactiveColor, end: widget.activeColor).animate(controller);
     animationSize = Tween(begin: 28.0, end: 35.0).animate(controller);
     setState(() {});
     controller.addListener((){
@@ -44,7 +45,7 @@ class _CustomBottomNavigationItemState extends State<CustomBottomNavigationItem>
     if(widget.index == currentRouteIndex){
       controller.forward();
     } else {
-      if(iconColor == Colors.yellowAccent){
+      if(iconColor == widget.activeColor){
         controller.reverse(from: 1.0);
       } else {
         controller.reverse();

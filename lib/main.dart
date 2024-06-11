@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider<HomeRouteCubit>(create: (context) => HomeRouteCubit()),
+        BlocProvider<ThemeCubit>(create: (context) => ThemeCubit()),
       ],
       child: const ContentApp()
     );

@@ -24,13 +24,18 @@ abstract class AppTheme {
     scaffoldBackgroundColor: backgroundColor,
     appBarTheme: AppBarTheme(
       elevation: 0.0,
-      backgroundColor: primaryColor,
-      titleTextStyle: TextStyle(color: textColor, fontSize: 15),
+      scrolledUnderElevation: 0.0,
+      backgroundColor: backgroundColor,
+      titleTextStyle: TextStyle(color: primaryColor, fontSize: 16, fontWeight: FontWeight.bold),
     ),
     textTheme: TextTheme(
       bodySmall: TextStyle(color: textColor),
       bodyMedium: TextStyle(color: textColor),
       bodyLarge: TextStyle(color: textColor),
+    ),
+    dividerTheme: DividerThemeData(
+      color: primaryColor,
+      thickness: 3,
     ),
   );
 

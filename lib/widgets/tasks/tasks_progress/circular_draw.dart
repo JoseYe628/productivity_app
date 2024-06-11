@@ -2,6 +2,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:productivity_app/blocs/blocs.dart';
+import 'package:productivity_app/theme/app_theme.dart';
 
 class CircularDraw extends StatelessWidget {
   const CircularDraw({
@@ -10,13 +13,15 @@ class CircularDraw extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Transform.rotate(
-      angle: -pi/2,
-      child: Transform.flip(
-        flipY: true,
-        child: CustomPaint(
-          size: Size(150, 150),
-          painter: _CircularProgress(),
+    return BlocBuilder<ThemeCubit, AppTheme>(
+      builder: (context, theme) => Transform.rotate(
+        angle: -pi/2,
+        child: Transform.flip(
+          flipY: true,
+          child: CustomPaint(
+            size: const Size(150, 150),
+            painter: _CircularProgress(theme.primaryColor),
+          ),
         ),
       ),
     );
@@ -24,10 +29,14 @@ class CircularDraw extends StatelessWidget {
 }
 
 class _CircularProgress extends CustomPainter {
+
+  _CircularProgress(this.color);
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     var brush = Paint()
-      ..color = Colors.pink
+      ..color = color
       ..strokeCap = StrokeCap.round
       ..strokeWidth = 18
       ..style = PaintingStyle.stroke;

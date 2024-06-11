@@ -19,14 +19,13 @@ class TaskHeader extends StatelessWidget {
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Icon(Icons.hub),
-                    Icon(Icons.adobe),
+                    Icon(Icons.edit),
                   ],
                 ),
               ],
             ),
           ),
-          Divider(color: Colors.pink, height: 10, thickness: 3,)
+          Divider(height: 10)
         ],
       ),
     );

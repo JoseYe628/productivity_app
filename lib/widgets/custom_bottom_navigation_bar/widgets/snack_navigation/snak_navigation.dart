@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:productivity_app/widgets/custom_bottom_navigation_bar/widgets/snack_navigation/snack_painter.dart';
 
 class SnackNavigation extends StatelessWidget {
-  SnackNavigation({super.key, required this.pointA, required this.pointB});
+  SnackNavigation({super.key, required this.pointA, required this.pointB, required this.color});
 
   double pointA;
   double pointB;
+  Color color;
 
   @override
   Widget build(BuildContext context){
@@ -14,7 +15,7 @@ class SnackNavigation extends StatelessWidget {
       height: 10,
       width: MediaQuery.of(context).size.width,
       child: CustomPaint(
-        painter: SnackPainter(pointA: pointA ,pointB: pointB),
+        painter: SnackPainter(pointA: pointA ,pointB: pointB, color: color),
       ),
     );
   }
