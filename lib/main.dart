@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:productivity_app/blocs/blocs.dart';
+import 'package:productivity_app/database/databases.dart';
 import 'package:productivity_app/routes/app_routes.dart';
 import 'package:productivity_app/theme/themes/dracula_theme.dart';
+import 'package:provider/provider.dart';
 
-void main(){
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await TodoItemDatabase.initialize();
+  runApp(
+    MultiProvider(
+      providers: [
+        Provider<TodoItemDatabase>(create: (_) => TodoItemDatabase()),
+      ],
+      child: const MyApp(),
+    )
+  );
 }
 
 class MyApp extends StatelessWidget {
