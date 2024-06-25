@@ -8,7 +8,8 @@ class AppRoutes {
 
   static final routeItems = [
     // Aquí los screens
-    RouteItem(routeName: "home", screen: HomeScreen())
+    RouteItem(routeName: "home", screen: HomeScreen()),
+    RouteItem(routeName: "edit_todo", screen: EditTodoItemsScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> generateRoutes() {

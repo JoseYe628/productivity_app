@@ -37,6 +37,9 @@ abstract class AppTheme {
       color: primaryColor,
       thickness: 3,
     ),
+    iconTheme: IconThemeData(
+      color: primaryColor
+    ),
   );
 
 

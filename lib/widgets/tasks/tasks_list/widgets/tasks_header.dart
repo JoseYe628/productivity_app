@@ -1,8 +1,16 @@
 
 import 'package:flutter/material.dart';
 
-class TaskHeader extends StatelessWidget {
+class TaskHeader extends StatefulWidget {
   const TaskHeader({super.key});
+
+  @override
+  State<TaskHeader> createState() => _TaskHeaderState();
+}
+
+class _TaskHeaderState extends State<TaskHeader> {
+
+  bool isActiveEditButton = false;
 
   @override
   Widget build(BuildContext context){
@@ -14,14 +22,27 @@ class TaskHeader extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 5),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text("Tareas", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(Icons.edit),
-                  ],
+                GestureDetector(
+                  onLongPress: (){
+                    isActiveEditButton = true;
+                    setState((){});
+                  },
+                  child: Text("Tareas", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),)
                 ),
+                isActiveEditButton == true 
+                ? TweenAnimationBuilder<double>(
+                    duration: const Duration(milliseconds: 100),
+                    tween: Tween<double>(begin: 10, end: 20),
+                    builder: (context, value, child) {
+                      return GestureDetector(
+                        onTap: () => Navigator.pushNamed(context, 'edit_todo'),
+                        child: Icon(Icons.edit, size: value,)
+                      );
+                    },
+                  ) 
+                : Container(),
               ],
             ),
           ),
