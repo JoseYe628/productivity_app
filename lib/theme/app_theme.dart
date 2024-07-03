@@ -40,6 +40,9 @@ abstract class AppTheme {
     iconTheme: IconThemeData(
       color: primaryColor
     ),
+    iconButtonTheme: IconButtonThemeData(
+      style: IconButton.styleFrom(foregroundColor: primaryColor, iconSize: 28),
+    )
   );
 
 

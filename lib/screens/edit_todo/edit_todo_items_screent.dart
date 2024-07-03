@@ -16,13 +16,19 @@ class EditTodoItemsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Editar Todo"),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: (){},
+          ),
+        ],
       ),
       body: Column(
         children: [
-          _Header(),
           ReorderableListView.builder(
             shrinkWrap: true,
-            itemCount: todo_items.length,
+            //itemCount: todo_items.length,
+            itemCount: 5,
             itemBuilder: (context, val){
               return ReordenableTodoItem(key: Key("$val"),);
             },
@@ -34,18 +40,3 @@ class EditTodoItemsScreen extends StatelessWidget {
   }
 }
 
-class _Header extends StatelessWidget {
-  const _Header({super.key});
-
-  @override
-  Widget build(BuildContext context){
-    return Column(
-      children: [
-        Row(
-          children: [],
-        ),
-        Divider(),
-      ],
-    );
-  }
-}
