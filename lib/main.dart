@@ -12,7 +12,7 @@ void main() async {
   runApp(
     MultiProvider(
       providers: [
-        Provider<TodoItemDatabase>(create: (_) => TodoItemDatabase()),
+        ChangeNotifierProvider<TodoItemDatabase>(create: (_) => TodoItemDatabase()),
       ],
       child: const MyApp(),
     )
