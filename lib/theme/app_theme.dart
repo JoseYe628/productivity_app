@@ -31,7 +31,7 @@ abstract class AppTheme {
     textTheme: TextTheme(
       bodySmall: TextStyle(color: textColor),
       bodyMedium: TextStyle(color: textColor),
-      bodyLarge: TextStyle(color: textColor),
+      bodyLarge: TextStyle(color: textColor, fontWeight: FontWeight.bold),
     ),
     dividerTheme: DividerThemeData(
       color: primaryColor,
@@ -42,7 +42,7 @@ abstract class AppTheme {
     ),
     iconButtonTheme: IconButtonThemeData(
       style: IconButton.styleFrom(foregroundColor: primaryColor, iconSize: 28),
-    )
+    ),
   );
 
 

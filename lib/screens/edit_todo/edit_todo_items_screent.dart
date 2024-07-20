@@ -1,6 +1,9 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:productivity_app/database/databases.dart';
+import 'package:productivity_app/screens/edit_todo/widgets/form_add_todo.dart';
+import 'package:productivity_app/widgets/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:productivity_app/screens/edit_todo/widgets/reordenable_todo_item.dart';
 
@@ -19,22 +22,32 @@ class EditTodoItemsScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: Icon(Icons.add),
-            onPressed: (){},
+            onPressed: (){
+              showDialog(
+                context: context,
+                builder: (context) => CustomDialog(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Agregar nuevo Todo", style: Theme.of(context).textTheme.bodyLarge,),
+                    FormAddTodo(),
+                  ],
+                )
+              );
+            },
           ),
         ],
       ),
-      body: Column(
-        children: [
-          ReorderableListView.builder(
-            shrinkWrap: true,
-            //itemCount: todo_items.length,
-            itemCount: 5,
-            itemBuilder: (context, val){
-              return ReordenableTodoItem(key: Key("$val"),);
-            },
-            onReorder: (prev, sig){},
-          ),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.only(bottom: 4),
+        child: ReorderableListView.builder(
+          shrinkWrap: true,
+          //itemCount: todo_items.length,
+          itemCount: 12,
+          itemBuilder: (context, val){
+            return ReordenableTodoItem(key: Key("$val"),);
+          },
+          onReorder: (prev, sig){},
+        ),
       )
     );
   }
