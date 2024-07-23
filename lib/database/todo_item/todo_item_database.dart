@@ -39,7 +39,7 @@ class TodoItemDatabase extends ChangeNotifier {
 
   // Leer todo items
   Future<void> fetchTodoItems() async {
-    final fetchedItems = await isar.todoItems.where().findAll();
+    final fetchedItems = await isar.todoItems.where().sortByOrder().findAll();
     currentTodoItems.clear();
     currentTodoItems.addAll(fetchedItems);
     notifyListeners();
@@ -61,4 +61,14 @@ class TodoItemDatabase extends ChangeNotifier {
     await isar.writeTxn(() => isar.todoItems.delete(id));
     await fetchTodoItems();
   }
+
+  Future<void> reorderItems(int oldIndex, int newIndex) async {
+
+  }
+
+  Future<List<TodoItem>> getAllItems() async {
+    List<TodoItem> todos = await isar.todoItems.where().sortByOrder().findAll();
+    return todos;
+  }
+
 }

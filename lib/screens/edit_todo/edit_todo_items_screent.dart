@@ -40,11 +40,11 @@ class EditTodoItemsScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(bottom: 4),
         child: ReorderableListView.builder(
-          shrinkWrap: true,
+          //shrinkWrap: true,
           //itemCount: todo_items.length,
-          itemCount: 12,
+          itemCount: todo_items.length,
           itemBuilder: (context, val){
-            return ReordenableTodoItem(key: Key("$val"),);
+            return ReordenableTodoItem(key: Key("$val"), todoItem: todo_items[val],);
           },
           onReorder: (prev, sig){},
         ),

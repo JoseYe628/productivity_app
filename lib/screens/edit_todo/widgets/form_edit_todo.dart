@@ -1,17 +1,20 @@
 
 import 'package:flutter/material.dart';
-import 'package:productivity_app/database/todo_item/todo_item_database.dart';
+import 'package:productivity_app/database/databases.dart';
+import 'package:productivity_app/database/todo_item/todo_item.dart';
 import 'package:provider/provider.dart';
 
-class FormAddTodo extends StatefulWidget {
-  const FormAddTodo({super.key});
+class FormEditTodo extends StatefulWidget {
+  const FormEditTodo({super.key, required this.todoItem});
+
+  final TodoItem todoItem;
 
   @override
-  State<FormAddTodo> createState() => _FormAddTodoState();
+  State<FormEditTodo> createState() => _FormEditTodoState();
 }
 
-class _FormAddTodoState extends State<FormAddTodo> {
-  
+class _FormEditTodoState extends State<FormEditTodo> {
+
   final _formKey = GlobalKey<FormState>();
   String description = "";
 
@@ -23,7 +26,8 @@ class _FormAddTodoState extends State<FormAddTodo> {
         children: [
           TextFormField(
             maxLines: 4,
-            onChanged: (val) {
+            initialValue: widget.todoItem.description,
+            onChanged: (val){
               setState(() {
                 description = val;
               });
@@ -38,12 +42,14 @@ class _FormAddTodoState extends State<FormAddTodo> {
           ElevatedButton(
             onPressed: () async {
               if(_formKey.currentState!.validate()){
-                await context.read<TodoItemDatabase>().addTodoItem(description, false);
+                String description_item = description == "" ? widget.todoItem.description : description;
+                await context.read<TodoItemDatabase>().updateTodoItem(widget.todoItem.id, description, widget.todoItem.checked);
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text("Nueva tarea creada!"), backgroundColor: Colors.blue,)
+                  const SnackBar(content: Text("Tarea Actualizada!"), backgroundColor: Colors.green,)
                 );
                 if (context.mounted) { Navigator.of(context).pop(); }
               }
+              
             },
             child: Text("Guardar"),
           ),
@@ -52,4 +58,3 @@ class _FormAddTodoState extends State<FormAddTodo> {
     );
   }
 }
-
